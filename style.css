@@ -14,6 +14,7 @@
   --color-orange: #feb546;
   --color-black: #000000;
   --color-light-purple: #9190f7fa;
+  --color-purple: rgb(182, 145, 252);
 
   /* Font size */
   --font-large: 48px;
@@ -109,7 +110,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: rgb(182, 145, 252);
+  background-color: var(--color-light-purple);
   padding: 8px;
 }
 
@@ -417,7 +418,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-light-purple);
 }
 
 .contact__title,
@@ -438,6 +439,25 @@ p {
   transform: scale(1.1);
   color: var(--color-yellow);
   transition: all var(--animation-duration) ease-in;
+}
+
+/* Scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 50px;
+  color: var(--color-white);
+  background-color: var(--color-light-purple);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
