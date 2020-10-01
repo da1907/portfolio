@@ -28,7 +28,7 @@
         <i class="fab fa-diaspora"></i>
         <a href="#">DaHyun</a>
       </div>
-      <div class="navbar_menu">
+      <div class="navbar__menu">
         <ul class="navbar__menu">
           <li class="navbar__menu__item active">Home</li>
           <li class="navbar__menu__item">About</li>
@@ -51,15 +51,23 @@
         alt="DaHyun's profile photo"
         class="home__avatar"
       />
-      <h1 class="home__title">안녕하세요, <br />노다현입니다.</h1>
-      <h2 class="home__description">----</h2>
+      <h1 class="home__title">
+        안녕하세요, <br />프론트엔드 개발자를 꿈꾸는<br />노다현입니다.
+      </h1>
+      <h2 class="home__description"></h2>
       <button class="home__contact">Contact Me</button>
     </section>
 
     <!-- About -->
     <section id="about" class="section section__container">
       <h1>About me</h1>
-      <p>나를 표현하는 설명</p>
+      <p>
+        □ 아르바이트, 봉사활동 등의 경험을 통해 원활한 의사소통이 가능합니다.
+        <br />
+        □ 지도 API, 맛집 API 등을 이용해 웹 서비스를 구현한 경험이 있습니다.<br />
+        □ 사용자 로그 데이터 분석 및 시각화의 경험으로 고객이 원하는 서비스를
+        구현할 수 있습니다.
+      </p>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
@@ -72,8 +80,8 @@
           <div class="major__icon">
             <i class="fab fa-java"></i>
           </div>
-          <h2 class="major__title">Java</h2>
-          <div class="major__description">Java</div>
+          <h2 class="major__title">Back-end</h2>
+          <div class="major__description">Java, Node JS</div>
         </div>
         <div class="major">
           <div class="major__icon">
@@ -92,6 +100,9 @@
           </div>
         </div>
         <div class="schools">
+          <div class="school__icon">
+            <i class="fas fa-school"></i>
+          </div>
           <div id="school__description">
             <p class="school__name">평촌 고등학교</p>
             <p class="school__period">2012.03 ~ 2015.02</p>
@@ -190,21 +201,17 @@
         <h3>Projects</h3>
         <div class="work__categories">
           <button class="category_btn active">
-            All <span class="category__count">0</span>
+            All <span class="category__count">2</span>
           </button>
           <button class="category_btn">
-            Front-end<span class="category__count">0</span>
+            Front-end<span class="category__count">1</span>
           </button>
           <button class="category_btn">
-            Back-end<span class="category__count">0</span>
+            Back-end<span class="category__count">1</span>
           </button>
         </div>
         <div class="work__projects">
-          <a
-            href="https://github.com/da1907/portfolio"
-            class="project"
-            target="blank"
-          >
+          <a href="https://github.com/da1907" class="project" target="blank">
             <img
               class="project__img"
               src="imgs/projects/wemeetnow.png"
@@ -213,6 +220,21 @@
             <div class="project__description">
               <h3>We meet now</h3>
               <span>다수의 사용자 위치 기반 중간 지점 찾아주기 서비스</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/da1907/pleasetoilet"
+            class="project"
+            target="blank"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/pleasetoilet.png"
+              alt="pleasetoilet"
+            />
+            <div class="project__description">
+              <h3>Please Toilet</h3>
+              <span>내 위치 근처 화장실을 찾아주는 서비스</span>
             </div>
           </a>
         </div>
@@ -224,8 +246,11 @@
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">ekgusgn@naver.com</h2>
       <div class="contact__links">
-        <a href="https://github.com/da1907/portfolio" target="_blank">
+        <a href="https://github.com/da1907" target="_blank">
           <i class="fab fa-github"></i>
+        </a>
+        <a href="https://blog.naver.com/ekgusgn" target="_blank">
+          <i class="fab fa-blogger-b"></i>
         </a>
       </div>
     </section>
