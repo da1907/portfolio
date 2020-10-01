@@ -126,15 +126,14 @@ p {
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
+  color: var(--color-white);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
 
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
-}
-
 .navbar__menu__item:hover {
+  border-color: var(--color-white);
   background-color: rgb(192, 192, 245);
 }
 
@@ -324,21 +323,21 @@ p {
   margin: 40px;
 }
 
-.category_btn {
+.category__btn {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
 }
 
-.category_btn.active,
-.category_btn:hover {
-  background-color: var(--color-pink);
+.category__btn.selected,
+.category__btn:hover {
+  background-color: var(--color-purple);
   color: var(--color-white);
 }
 
-.category_btn.active .category__count,
-.category_btn:hover .category__count {
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
   opacity: 1;
   top: 0;
 }
